@@ -103,7 +103,6 @@ ul{
     position: absolute;
     z-index: 10;
     top:0%;
-    font-family: "BrattGraner";
     font-size: 40px;
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
     transition-timing-function: cubic-bezier(0.175, 0.885, 0.320, 1.275); /* easeOutBack */
