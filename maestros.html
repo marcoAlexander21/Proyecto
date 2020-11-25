@@ -5,8 +5,13 @@
         <title>
             MAESTRO MODE 
         </title>
-        <link rel="stylesheet" href="medios.css" type="text/css">
-        <script src="phaser.js"></script>
+        <link rel="stylesheet" href="estilos/generalStyles.css" type="text/css">
+        <style type="text/css">
+            body{
+                background-image: url(imagenes/puma.png);
+            }
+        </style>
+        <script src="js/phaser.js"></script>
     </head>
     <body>
         <section class="titulo">
@@ -14,9 +19,8 @@
         </section>
         <div class = 'bloque_juego'></div>
         <div class="laberinto">
-            <canvas width="600", height="500", id="interCan"></canvas>
             <script src="intermedios.js"></script>
-            <a title="Volver" href="proyecto.html"><img src="imagenes/volver.png" alt="Boton Volver" /></a>
+            <a title="Volver" href="index.html"><img src="imagenes/volver.png" alt="Boton Volver" /></a>
         </div>  
     </body>
 </html>

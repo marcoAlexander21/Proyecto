@@ -4,7 +4,7 @@
 }
 
 body{
-    background-image: url(imagenes/condor.png);
+    background-color:"#000";
     color: whitesmoke;
     display: flex;
     align-items: center;
@@ -23,9 +23,9 @@ a{
 
 @font-face{
     font-family: "BrattGraner";
-    src: url(tipografia/Bratt_Graner.ttf);
+    src: url(../tipografia/Bratt_Graner.ttf);
     font-family: "Brushia";
-    src:url(tipografia/BRUSHIA.ttf)
+    src:url(../tipografia/BRUSHIA.ttf)
 }
 
 .titulo{

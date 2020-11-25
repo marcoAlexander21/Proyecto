@@ -1,5 +1,5 @@
 {
-  "name": "Proyecto",
+  "name": "clear",
   "version": "1.0.0",
   "description": "",
   "main": "leyenda.js",
@@ -19,5 +19,6 @@
   "homepage": "https://github.com/marcoAlexander21/Proyecto#readme",
   "dependencies": {
     "http-server": "^0.12.3"
-  }
+  },
+  "devDependencies": {}
 }
