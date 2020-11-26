@@ -1,29 +1,38 @@
-var Game = new Phaser.Game(600, 600, Phaser.CANVAS, 'phaser-example',
-{
-    preload: preload,
-    create: create,
-    update: update,
-    render:render,
-});
+const config ={
+    width : 600,
+    height: 600 ,
+    parent: "container",
+    type : Phaser.AUTO,
+    scene  :
+    {
+        preload: preload,
+        create:create,
+        update:update
+    },
+    physics:{
+        default:"arcade",
+        arcade: {
+            gravity:{
+                y=500,
 
-function preload() {
-
-    game.load.tilemap('level1', 'assets/games/starstruck/level1.json', null, Phaser.Tilemap.TILED_JSON);
-    game.load.image('tiles-1', 'assets/games/starstruck/tiles-1.png');
-    game.load.spritesheet('dude', 'assets/games/starstruck/dude.png', 32, 48);
-    game.load.spritesheet('droid', 'assets/games/starstruck/droid.png', 32, 32);
-    game.load.image('starSmall', 'assets/games/starstruck/star.png');
-    game.load.image('starBig', 'assets/games/starstruck/star2.png');
-    game.load.image('background', 'assets/games/starstruck/background2.png');
-
+            }
+        }
+    }
 };
 
-var map;
-var tileset;
-var layer;
-var player;
-var facing = 'left';
-var jumpTimer = 0;
-var cursors;
-var jumpButton;
-var bg;
+var game =  new Phaser.Game(config);
+
+function preload() {
+    this.load.image("piedra","./imagenes/piedra.png");
+}
+function create() {
+    this.piedra = this.physics.add.image(100, 100, "piedra");
+    this.piedra.setScale(2);
+    this.piedra.flipX = true;
+    this.piedra.setOrigin(0.5);
+    this.piedra.SetCollideWorldBounds(true);
+    this.piedra.setBounce(0.5)
+}
+function update(time, delta) {
+    //this.piedra.x++
+}
